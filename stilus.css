@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    justify-content: space-evenly;
+    max-width: 800px;
+    margin: auto;
+}
+.menu li{
+    text-align: center;
+    list-style-type: none;
+}
+.menu ul{
+    margin: 0;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    max-width: 50%;
+}
+
+img{
+    width: 150px;
+}
+
+.elso li{
+    text-align: left;
+    
+}
+
+.masodik li{
+    text-align: left;
+}
+
+.harmadik{
+    text-align: left;
+}
