@@ -11,6 +11,7 @@ body{
     justify-content: space-evenly;
     max-width: 800px;
     margin: auto;
+    padding-bottom: 200px;
 }
 .menu li{
     text-align: center;
@@ -24,19 +25,69 @@ body{
     max-width: 50%;
 }
 
-img{
+.elso img{
+    width: 150px;
+}
+
+.masodik img{
+    width: 150px;
+}
+
+.harmadik img{
     width: 150px;
 }
 
 .elso li{
     text-align: left;
-    
+    padding-bottom: 10px;
 }
 
 .masodik li{
     text-align: left;
+    padding-bottom: 10px;
 }
 
-.harmadik{
+.harmadik li{
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.masodik{
+    border-right: 2px solid red;
+    border-left: 2px solid red;
+}
+
+.harmadik h2{
+    text-align: center;
+}
+
+ul {
+    list-style-image: url('');
+  }
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.folyamatabra{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    justify-content: space-evenly;
+    max-width: 800px;
+    margin: auto;
+}
+
+.folyamatkep img{
+    max-width: 100%;
+}
+
+.folyamatelso{
     text-align: left;
 }
+
+.folyamatelso h1{
+    border-bottom: 2px solid red;
+}
+
