@@ -9,10 +9,42 @@ body{
     grid-template-columns: auto auto auto;
     text-align: center;
     justify-content: space-evenly;
-    max-width: 800px;
+    max-width: 600px;
     margin: auto;
     padding-bottom: 200px;
 }
+
+.sales{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    justify-content: space-evenly;
+    max-width: 600px;
+    margin: auto;
+}
+
+.szoveg{
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+    max-width: 600px;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.kollega1 img{
+    width: 150px;
+}
+.kollega2 img{
+    width: 150px;
+}
+.kollega3 img{
+    width: 150px;
+}
+.kollega4 img{
+    width: 150px;
+}
+
 .menu li{
     text-align: center;
     list-style-type: none;
@@ -75,7 +107,7 @@ ul {
     grid-template-columns: auto auto;
     text-align: center;
     justify-content: space-evenly;
-    max-width: 800px;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -90,4 +122,3 @@ ul {
 .folyamatelso h1{
     border-bottom: 2px solid red;
 }
-
