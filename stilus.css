@@ -1,124 +1,324 @@
-body{
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    text-align: center;
-    justify-content: space-evenly;
-    max-width: 600px;
-    margin: auto;
-    padding-bottom: 200px;
-}
-
-.sales{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    text-align: center;
-    justify-content: space-evenly;
-    max-width: 600px;
-    margin: auto;
-}
-
-.szoveg{
-    display: grid;
-    grid-template-columns: auto;
-    margin: auto;
-    max-width: 600px;
-    text-align: center;
-    justify-content: space-evenly;
-}
-
-.kollega1 img{
-    width: 150px;
-}
-.kollega2 img{
-    width: 150px;
-}
-.kollega3 img{
-    width: 150px;
-}
-.kollega4 img{
-    width: 150px;
-}
-
-.menu li{
-    text-align: center;
-    list-style-type: none;
-}
-.menu ul{
+*{
     margin: 0;
-    padding-left: 0;
+    font-family: 'Varela Round';
+}
+body{
+    background: black;
+    color: white;
+}
+nav ul#egysor li{
+    display: inline;
+}
+nav ul{
+
+    word-spacing: 30px;
+}
+nav{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    grid-area: menus;
+}
+main{
+    width: 100%;
+    max-width: 2000px;
+    background-color: rgb(40, 40, 40);
+}
+.main1{
+    margin: auto;
+    width: 80%;
+    max-width: 700px;
+    background-color: rgb(40, 40, 40);
+}
+
+.main1 header{
+    text-align: center;
+    margin: auto;
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    max-width: 50%;
+  padding-bottom: 30px;
+  grid-area: focim;
 }
-
-.elso img{
-    width: 150px;
+.main1 img{
+    height: 100px;
+    
 }
-
-.masodik img{
-    width: 150px;
+.main1 article{
+    grid-area: tartalom;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
 }
-
-.harmadik img{
-    width: 150px;
-}
-
-.elso li{
-    text-align: left;
-    padding-bottom: 10px;
-}
-
-.masodik li{
-    text-align: left;
-    padding-bottom: 10px;
-}
-
-.harmadik li{
-    text-align: left;
-    padding-bottom: 10px;
-}
-
-.masodik{
-    border-right: 2px solid red;
-    border-left: 2px solid red;
-}
-
-.harmadik h2{
+.main1 section img{
+    display: block;
+    margin: auto;
     text-align: center;
 }
-
-ul {
-    list-style-image: url('');
+.vonal{
+    border-right: 3px solid red;
+}
+.main1 section ul li::before {
+    content: "➧";
+    color: orange;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
   }
+.main1 section h2{
+    text-align: center;
+}
+.body2{
+        color: white;
+        margin: 0;
+        background: black;
+        margin: auto;
 
-.menu a{
+}
+
+.main2 {
+    padding-top: 70px;
+    background: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    max-width: 1600px;
+    margin: auto;
+    color: white;
+    margin: auto
+}
+
+.main2 aside{
+    padding-left: 100px;
+    padding-top: 60px;
+}
+.main2 article h1{
+    font-size: 50pt;
+    border-bottom: 3px solid red;
+    
+}
+.main2{
+    grid-area: szoveg;
+}
+.main2 article p{
+    padding-top: 30px;
+    font-size: 15pt;
+}
+.main2 img{
+    grid-area: kep;
+}
+.body3{
+    color: white;
+    margin: 0;
+    background: black;
+    margin: auto;
+    height: 700px;
+}
+.main3{
+    margin: auto;
+    width: 80%;
+    max-width: 1200px;
+    
+
+}
+.main3 h1{
+    text-align: center;
+    font-size: 40pt;
+    text-decoration: underline red;
+    padding-bottom: 20px;
+    grid-area: salesfocim;
+}
+.main3 p{
+    text-align: center;
+    padding-bottom: 30px;
+    grid-area: salesszoveg;
+}
+.main3 img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 40px;
+}
+.main3 article{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+}
+.doboz1{
+    margin: auto;
+}
+.doboz2{
+    margin: auto;
+}
+.doboz3{
+    margin: auto;
+}
+.doboz4{
+    margin: auto;
+}
+.main3 a{
     text-decoration: none;
     color: white;
+    
 }
-
-.folyamatabra{
-    display: grid;
-    grid-template-columns: auto auto;
-    text-align: center;
-    justify-content: space-evenly;
-    max-width: 600px;
+.main3 aside {
     margin: auto;
+    text-align: center;
+    background-color: rgb(0, 84, 154);
+    width: 250px;
+    height: 50px;
+    padding-top: 10px;
 }
 
-.folyamatkep img{
-    max-width: 100%;
-}
+@media screen and (max-width: 600px) {
 
-.folyamatelso{
+    /*
+    1. rész
+    */
+    nav ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
+    margin-left: 5px;
+    max-width: 50px;
+    }
+    
+    nav li{
+    margin: 10px 0px 10px 10px;
     text-align: left;
-}
+    font-size: 20pt;
+    }
+    
+    main{
+    text-align: center;
+    display: grid;
+    grid-template-areas: 'menus'
+    'focim'
+    'tartalom';
+    
+    }
+    
+    .main1 h1{
+    font-size: 25pt;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -75px;
+    }
+    
+    .main1 article{
+    margin: auto;
+    grid-area: tartalom;
+    max-width: 400px;
+    display: grid;
+    margin-left: 50px;
+    grid-template-columns: 1fr;
+    }
+    
+    .main1 section img{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    }
+    
+    .main1 article section{
+    max-width: 400px;
+     grid-template-columns: 1fr;
+    }
 
-.folyamatelso h1{
+    /*
+    2. rész
+    */
+    
+    .body2{
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+    display: grid;
+    grid-template-areas: 'main2 main2 main2 ';
+    
+    }
+    
+    .main2{
+    margin: auto;
+    max-width: 600px;
+    display: grid;
+    grid-template-areas: 'szoveg'
+    'kep';
+    grid-template-columns: 1fr;
+    }
+    
+    .main2 article{
+    grid-area: szoveg;
+    max-width: 600px;
+    margin-left: 50px;
+    margin-right: 200px;
+    }
+    
+    .main2 article h1{
+    font-family: 'Fredoka One';
+    color: white;
+    font-size: 30pt;
+    margin-top: 50px;
+    margin-left: 25px;
+    width: 400px;
+    text-align: center;
+    letter-spacing: 2px;
+    }
+    
+    .main2 article p{
+    text-align: justify;
+    width: 400px;
+    margin-left: 25px;
+    font-family: 'Varela Round';
+    }
+    
+    .main2 img{
+    grid-area: kep;
+    width: 350px;
+    margin-top: 50px;
+    margin-left: -125px;
+    }
+    
+    /*
+    3. rész
+    */
+    
+    .main3{
+    max-width: 600px;
+    display: grid;
+    grid-template-areas: 'salesfocim'
+    'salesszoveg'
+    'doboz';
+    grid-template-columns: 1fr;
+    }
+    
+    .main3 h1{
+    grid-area: salesfocim;
+    font-family: 'Fredoka One';
+    margin: auto;
+    max-width: 500px;
+    letter-spacing: 3px;
+    text-align: center;
     border-bottom: 2px solid red;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    }
+    
+    .main3 p{
+    max-width: 450px;
+    grid-area: salesszoveg;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-left: -10px;
+    }
+    .doboz{
+        grid-area: doboz;
+        width: 200px;
+        margin: auto;
+        margin-left: 115px;
+        }
+
 }
